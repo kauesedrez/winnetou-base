@@ -6,7 +6,7 @@
 
 import Config from "../../../win.config.js";
 
-export default class WinnetouBase {
+export class WinnetouBase {
   constructor() {
     /**
      * Incrementally id when no specific identifier is given
@@ -760,3 +760,5 @@ export default class WinnetouBase {
     window.localStorage.setItem("theme", JSON.stringify(theme));
   }
 }
+
+export const W = new WinnetouBase();
